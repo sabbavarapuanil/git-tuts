@@ -5,3 +5,4 @@ select
     listings.id as hotel_id
 from {{ref('intrim_raw_hosts')}} hosts
 inner join {{source('training','raw_listings')}} listings on hosts.host_id=listings.host_id
+where hosts.host_id is not null
