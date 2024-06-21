@@ -1,0 +1,1 @@
+select * from {{ ref("stage_raw_hosts")}} where trim(host_id) is null

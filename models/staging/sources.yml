@@ -1,0 +1,15 @@
+sources:
+  - name: training
+    schema: training
+    tables:
+      - name: raw_host
+        columns:
+          - name: id
+            tests: 
+              - not_null
+              - unique
+          - name: name
+      - name: raw_listings
+        columns:
+          - name: id
+      - name: raw_reviews

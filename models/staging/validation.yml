@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: stg_raw_hosts
+    columns: 
+      - name: host_id
+        tests:
+          - not_empty
+  - name: stg_raw_lisitings
+    columns: 
+      - name: listing_id
+        tests:
+          - not_empty
